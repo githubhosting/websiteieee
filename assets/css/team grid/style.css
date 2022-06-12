@@ -14,8 +14,9 @@ html {
 }
 
 .team-container {
-  max-width: 1200px;
-  margin: 0 0;
+    max-width: 1200px;
+    align-self: center;
+    margin: 0 0;
 }
 .team-container .team-row {
   display: flex;

@@ -28,6 +28,7 @@ body {
 
 .team-container {
   max-width: $row_width * 1px;
+  align-self: center;
   margin: 0 0;
 
   & .team-row {
