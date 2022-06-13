@@ -1,34 +1,4 @@
-/*-----------------------------------------------------------------------------------
 
-    Template Name: Egens - Creative Agency Bootstrat Template
-    Version: 1.0
-
------------------------------------------------------------------------------------
-
-    CSS INDEX
-    ===================
-
-    00 - Helpers (Variables)
-    01 - Basic (Typography)
-    02 - Template
-        2.1 - Header Style
-        2.2 - Slider Style
-        2.3 - About Style
-        2.4 - Funfact Style
-        2.5 - Service Style
-        2.6 - Progress Style
-        2.7 - Portfolio One Style
-        2.8 - Work Banner Style
-        2.9 - Team Style
-        2.10 - Testimonial Style
-        2.11 - Blog Style
-        2.12 - Brand Style
-        2.13 - Breadcrumb Style
-        2.14 - Sidebar Style
-        2.15 - Brand Style
-        2.16 - Plan Style
-
------------------------------------------------------------------------------------*/
 /*----------------------------------------*/
 /*  01. Template default CSS
 /*----------------------------------------*/
@@ -41,7 +11,7 @@ html {
 
 .preloader {
   align-items: center;
-  background: #FFF;
+  background: #000;
   display: flex;
   height: 100vh;
   justify-content: center;
@@ -53,6 +23,11 @@ html {
   z-index: 9999;
   opacity: 1;
   transform: opacity 1s linear;
+}
+
+.preloader img{
+transform: scale(0.6);
+
 }
 
 body {
@@ -818,7 +793,7 @@ hr {
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .header-wrapper {
-    margin-top: 30px;
+    margin-top: 10px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -2368,7 +2343,7 @@ hr {
   text-align: right;
   flex-direction: column;
   top: -64px;
-  right: 58px;
+
 }
 @media only screen and (min-width: 1550px) and (max-width: 1680px) {
   .about-two-images {
@@ -2466,6 +2441,7 @@ hr {
 .about-two-images .top img {
   align-self: flex-end;
   margin-right: 30px;
+  border-radius: 20px;
 }
 .about-two-images .top img:last-child {
   margin-right: 0px;
