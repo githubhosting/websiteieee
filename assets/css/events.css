@@ -123,6 +123,10 @@
     font-size: 30px;
     padding-bottom: 2vh;
 }
+.page-event .upcoming-event-list .event-block .sec-3 .title span{
+    font-size: 16px;
+    padding-bottom: 2vh;
+}
 
 .page-event .upcoming-event-list .event-block .sec-3 .venue table td {
     vertical-align: top;
