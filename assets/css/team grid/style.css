@@ -50,7 +50,6 @@ html {
 .team-container .member-card .image {
   position: relative;
   width: 100%;
-  height: 100%;
   margin: 0;
   padding: 0;
   border-radius: 40px;
@@ -86,14 +85,15 @@ html {
   text-align: center;
 }
 .team-container .member-card .intro p {
-  margin-bottom: 0;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  display: block;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
-  font-weight: 1000;
-  font-size: 22px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-wrap: break-word;
+    display: block;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    font-weight: 1000;
+    font-size: 22px;
 }
 .team-container .member-card .intro span {
   margin-bottom: 0;
