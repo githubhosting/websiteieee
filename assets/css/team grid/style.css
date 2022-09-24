@@ -48,23 +48,24 @@ html {
   }
 }
 .team-container .member-card .image {
-  position: relative;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  border-radius: 40px;
-  webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 40px 100%, 0% calc(100% - 40px));
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 40px 100%, 0% calc(100% - 40px));
-  background: linear-gradient(0deg, #f9fbfc 3.36%, #e2eaf5 95.69%);
+    position: relative;
+    margin: 0;
+    padding-top: 10px;
+    border-radius: 40px;
+    webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 40px 100%, 0% calc(100% - 40px));
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 40px 100%, 0% calc(100% - 40px));
+    background: linear-gradient(0deg, #f9fbfc 3.36%, #e2eaf5 95.69%);
 }
 .team-container .member-card .image img {
-  position: relative;
-  background: yellow;
-  left: 15px;
-  top: -10%;
-  width: 220px;
-  webkit-clip-path: circle();
-  clip-path: circle();
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background: yellow;
+    top: -10%;
+    width: 220px;
+    height: 220px;
+    webkit-clip-path: circle(110px at 50% 50%);
+    clip-path: circle(110px at 50% 110px);
 }
 @media screen and (max-width: 320px) {
   .team-container .member-card .image img {
@@ -114,15 +115,21 @@ html {
   height: 0;
   width: 0;
   margin: 5px 5px;
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 40px 100%, 0% calc(100% - 40px));
-  overflow: hidden;
-  visibility: hidden;
-  -webkit-transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
-  -moz-transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
-  -o-transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
-  transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
-  backdrop-filter: blur(2px);
-  background-color: rgba(191, 218, 253, 0.3);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 40px 100%, 0% calc(100% - 40px));
+    overflow: hidden;
+    visibility: hidden;
+    -webkit-transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+    -moz-transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+    -o-transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+    transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+    backdrop-filter: blur(2px);
+    background-color: rgba(191, 218, 253, 0.3);
+}
+
+.team-container .member-card .caption p {
+    padding-left: 6px;
+    padding-top: 6px;
+    line-height: 150%;
 }
 @media screen and (max-width: 320px) {
   .team-container .member-card .caption {

@@ -72,10 +72,8 @@ body {
 
     & .image {
       position: relative;
-      width: 100%;
-      //height: 100%;
       margin: 0;
-      padding: 0;
+      padding-top: 10px;
 
       border-radius: $card_rad;
       webkit-clip-path: $card_clip;
@@ -83,13 +81,16 @@ body {
       background: linear-gradient(0deg, #f9fbfc 3.36%, #e2eaf5 95.69%);
 
       & img {
-        position: relative;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
         background: yellow;
-        left: 15px;
         top: -10%;
         width: $card_width_max * 1px - 30px;
-        webkit-clip-path: circle();
-        clip-path: circle();
+        height: $card_width_max * 1px - 30px;
+        webkit-clip-path: circle(110px at 50% 50%);
+        clip-path: circle(110px at 50% 110px);
 
         @media screen and (max-width: 320px) {
           width: 200 * 1px - 30px;
@@ -158,6 +159,12 @@ body {
 
       backdrop-filter: blur(2px);
       background-color: rgba(191, 218, 253, 0.3);
+
+      p {
+        padding-left: 6px;
+        padding-top: 6px;
+        line-height: 150%;
+      }
 
       //@media (pointer: none), (pointer: coarse) {
       //  color: #ffffff;
